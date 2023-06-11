@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="874.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TimtailieuController">
+   <children>
+      <TableView fx:id="tabletailieu" layoutX="16.0" layoutY="132.0" prefHeight="416.0" prefWidth="855.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="132.0">
+        <columns>
+          <TableColumn fx:id="colMaTaiLieu" prefWidth="123.0" text="Mã Tài Liệu" />
+            <TableColumn fx:id="colTenTaiLieu" prefWidth="378.0" text="Tên Tài Liệu" />
+            <TableColumn fx:id="colLoaiTaiLieu" minWidth="4.0" prefWidth="137.0" resizable="false" text="Loại Tài Liệu" />
+            <TableColumn fx:id="colSoLuongCon" prefWidth="124.0" text="Số Lượng" />
+            <TableColumn fx:id="colTLDacBiet" prefWidth="92.0" text="Đặc Biệt" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="358.0" layoutY="46.0" prefHeight="31.0" prefWidth="382.0" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="46.0" />
+      <Button layoutX="750.0" layoutY="46.0" mnemonicParsing="false" onAction="#Search" prefHeight="31.0" prefWidth="86.0" styleClass="button3" stylesheets="@../source/Main.css" textFill="#2c0372" AnchorPane.bottomAnchor="563.0" AnchorPane.rightAnchor="39.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <ComboBox fx:id="cbChooseSearch" layoutX="158.0" layoutY="46.0" prefHeight="19.0" prefWidth="161.0" promptText="theo" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="556.0" />
+      <Button layoutX="566.0" layoutY="574.0" mnemonicParsing="false" onAction="#xoa" text="Xóa" />
+      <Button layoutX="40.0" layoutY="574.0" mnemonicParsing="false" onAction="#select" text="Chỉnh sửa" />
+      <Label layoutX="43.0" layoutY="46.0" prefHeight="31.0" prefWidth="104.0" text="Tìm Kiếm Theo" />
+      <Button layoutX="326.0" layoutY="574.0" mnemonicParsing="false" onAction="#tailieudetail" text="Xem chi tiết" />
+      <Button layoutX="749.0" layoutY="91.0" mnemonicParsing="false" onAction="#lammoi" prefHeight="35.0" prefWidth="86.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserYeucautailieuController">
+   <children>
+      <TableView fx:id="tableyctailieu" layoutX="65.0" layoutY="72.0" prefHeight="370.0" prefWidth="745.0">
+        <columns>
+          <TableColumn fx:id="colstt" prefWidth="75.0" text="STT" />
+          <TableColumn fx:id="colTentailieu" minWidth="0.0" prefWidth="507.0" text="Tên Tài Liệu" />
+            <TableColumn fx:id="coltrangthai" minWidth="0.0" prefWidth="162.0" text="Trạng thái" />
+        </columns>
+      </TableView>
+      <Button layoutX="693.0" layoutY="469.0" mnemonicParsing="false" onAction="#xoa" prefHeight="31.0" prefWidth="117.0" text="Xóa" />
+      <Button layoutX="421.0" layoutY="32.0" mnemonicParsing="false" onAction="#tkdaxuly" prefHeight="31.0" prefWidth="90.0" text="Đã xử lý" />
+      <Button layoutX="620.0" layoutY="32.0" mnemonicParsing="false" onAction="#tkchuaxuly" prefHeight="31.0" prefWidth="90.0" text="Chưa xử lý" />
+      <Button layoutX="731.0" layoutY="30.0" mnemonicParsing="false" onAction="#xemtatca">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+      <Label layoutX="65.0" layoutY="474.0" text="Tên Tài Liệu" />
+      <TextField fx:id="tfTentailieu" layoutX="161.0" layoutY="469.0" prefHeight="31.0" prefWidth="271.0" />
+      <Button layoutX="445.0" layoutY="469.0" mnemonicParsing="false" onAction="#yeucau" text="Yêu cầu" />
+      <Button layoutX="517.0" layoutY="32.0" mnemonicParsing="false" onAction="#tkdangxuly" prefHeight="31.0" prefWidth="97.0" text="Đang xử lý" />
+   </children>
+</AnchorPane>

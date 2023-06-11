@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="874.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TaiLieuYeuThichController">
+   <children>
+      <TableView fx:id="tabletailieu" layoutX="16.0" layoutY="75.0" prefHeight="369.0" prefWidth="854.0" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="75.0">
+        <columns>
+          <TableColumn fx:id="colMaTaiLieu" prefWidth="123.0" text="Mã Tài Liệu" />
+            <TableColumn fx:id="colTenTaiLieu" prefWidth="378.0" text="Tên Tài Liệu" />
+            <TableColumn fx:id="colLoaiTaiLieu" minWidth="4.0" prefWidth="137.0" resizable="false" text="Loại Tài Liệu" />
+            <TableColumn fx:id="colSoLuongCon" prefWidth="124.0" text="Số Lượng" />
+            <TableColumn fx:id="colTLDacBiet" prefWidth="92.0" text="Đặc Biệt" />
+        </columns>
+      </TableView>
+      <Button layoutX="716.0" layoutY="28.0" mnemonicParsing="false" onAction="#lammoi" text="Làm Mới" />
+      <Button layoutX="557.0" layoutY="28.0" mnemonicParsing="false" onAction="#bothich" text="Bỏ Thích" />
+   </children>
+</AnchorPane>

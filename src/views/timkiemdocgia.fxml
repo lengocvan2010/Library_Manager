@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="616.0" maxWidth="880.0" prefHeight="615.0" prefWidth="880.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TimdocgiaController">
+   <children>
+      <TableView fx:id="tabledocgia" layoutX="16.0" layoutY="135.0" prefHeight="381.0" prefWidth="860.0" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="135.0">
+        <columns>
+          <TableColumn fx:id="colMaDocGia" prefWidth="105.0" text="Mã Độc Giả" />
+            <TableColumn fx:id="colHoTen" prefWidth="214.0" text="Họ Tên" />
+            <TableColumn fx:id="colCMND" minWidth="4.0" prefWidth="179.0" resizable="false" text="CMND/CCCD" />
+            <TableColumn fx:id="colLoaiDocGia" prefWidth="139.0" text="Loại Độc Giả" />
+            <TableColumn fx:id="colSoSachMuon" prefWidth="114.0" text="Số Sách Mượn" />
+            <TableColumn fx:id="colQuaHan" prefWidth="101.0" text="Quá Hạn" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tfSearch" layoutX="358.0" layoutY="46.0" prefHeight="31.0" prefWidth="382.0" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="135.0" AnchorPane.topAnchor="46.0" />
+      <Button layoutX="750.0" layoutY="46.0" mnemonicParsing="false" onAction="#Search" prefHeight="35.0" prefWidth="84.0" styleClass="button3" stylesheets="@../source/Main.css" textFill="#2c0372" AnchorPane.bottomAnchor="563.0" AnchorPane.rightAnchor="41.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <ComboBox fx:id="cbChooseSearch" layoutX="158.0" layoutY="46.0" prefHeight="19.0" prefWidth="161.0" AnchorPane.bottomAnchor="563.0" AnchorPane.leftAnchor="158.0" AnchorPane.rightAnchor="556.0" />
+      <Button layoutX="774.0" layoutY="544.0" mnemonicParsing="false" onAction="#xoa" text="Xóa" />
+      <Button layoutX="43.0" layoutY="543.0" mnemonicParsing="false" onAction="#select1" text="Xem Chi Tiết" />
+      <Label layoutX="43.0" layoutY="46.0" prefHeight="31.0" prefWidth="104.0" text="Tìm Kiếm Theo" />
+      <Button layoutX="755.0" layoutY="90.0" mnemonicParsing="false" onAction="#lammoi" prefHeight="24.0" prefWidth="84.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+      <Pane layoutX="276.0" layoutY="538.0" prefHeight="42.0" prefWidth="270.0" style="-fx-border-color: #808080;">
+         <children>
+            <ComboBox fx:id="cbPhieu" layoutX="14.0" layoutY="6.0" prefWidth="150.0" />
+            <Button layoutX="171.0" layoutY="6.0" mnemonicParsing="false" onAction="#lapphieu" text="Lập Phiếu" />
+         </children></Pane>
+   </children>
+</AnchorPane>

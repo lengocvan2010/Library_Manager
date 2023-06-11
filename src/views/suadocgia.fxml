@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="544.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdatettdgController">
+   <children>
+      <Label layoutX="48.0" layoutY="86.0" text="Tên đăng nhập" />
+      <Label layoutX="90.0" layoutY="241.0" text="Họ tên" />
+      <Label layoutX="66.0" layoutY="318.0" text="Ngày sinh" />
+      <Label layoutX="63.0" layoutY="155.0" text="Mã độc giả" />
+      <Label layoutX="86.0" layoutY="390.0" text="Địa chỉ" />
+      <Label layoutX="337.0" layoutY="14.0" text="Chỉnh sửa độc giả">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="170.0" layoutY="79.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfTendangnhap" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Label layoutX="99.0" layoutY="461.0" text="SĐT" />
+      <Label layoutX="431.0" layoutY="461.0" text="Sách quá hạn" />
+      <Label layoutX="402.0" layoutY="390.0" text="Sách đang mượn" />
+      <Label layoutX="435.0" layoutY="318.0" text="Loại độc giả" />
+      <Label layoutX="437.0" layoutY="241.0" text="MSSV/MCB" />
+      <Label layoutX="468.0" layoutY="155.0" text="CMND" />
+      <Label layoutX="472.0" layoutY="86.0" text="Email" />
+      <Pane layoutX="170.0" layoutY="148.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMadocgia" layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.0000129044056" />
+         </children>
+      </Pane>
+      <Pane layoutX="544.0" layoutY="454.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSachquahan" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="544.0" layoutY="383.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSachmuon" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <TextField fx:id="tfHoten" layoutX="170.0" layoutY="247.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfSdt" layoutX="170.0" layoutY="456.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfDiachi" layoutX="170.0" layoutY="385.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfNgaysinh" layoutX="170.0" layoutY="313.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfLoaidocgia" layoutX="536.0" layoutY="313.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfMS" layoutX="536.0" layoutY="236.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfCMND" layoutX="536.0" layoutY="150.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="tfEmail" layoutX="536.0" layoutY="81.0" prefHeight="31.0" prefWidth="207.0" />
+      <Button layoutX="390.0" layoutY="499.0" onAction="#save" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Lưu" />
+     
+   </children>
+</AnchorPane>

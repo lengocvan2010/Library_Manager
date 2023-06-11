@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="840.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TimPhieuMuonController">
+ <children>
+      <TableView fx:id="tableDanhsach" layoutX="6.0" layoutY="130.0" prefHeight="362.0" prefWidth="830.0">
+        <columns>
+            <TableColumn fx:id="colMaphieu" prefWidth="94.0" text="Mã Phiếu" />
+            <TableColumn fx:id="colMadg" minWidth="8.0" prefWidth="91.0" text="Mã ĐG" />
+          <TableColumn fx:id="colMatl" prefWidth="117.0" text="Mã TL" />
+            <TableColumn fx:id="colTendg" prefWidth="247.0" text="Tên ĐG" />
+            <TableColumn fx:id="colNgaymuon" prefWidth="137.0" text="Ngày Mượn" />
+            <TableColumn fx:id="colTrangthai" prefWidth="141.0" text="Trạng Thái" />
+        </columns>
+      </TableView>
+      <Label layoutX="101.0" layoutY="55.0" text="Tìm kiếm theo:" />
+      <ComboBox fx:id="cbTimkiem" layoutX="221.0" layoutY="50.0" prefHeight="31.0" prefWidth="149.0" promptText="Mã Phiếu" />
+      <TextField fx:id="tfMa" layoutX="383.0" layoutY="50.0" />
+      <Button layoutX="606.0" layoutY="50.0" mnemonicParsing="false" onAction="#timkiem" prefHeight="35.0" prefWidth="79.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <Button layoutX="714.0" layoutY="50.0" mnemonicParsing="false" onAction="#lammoi">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+      <Button layoutX="214.0" layoutY="507.0" mnemonicParsing="false" onAction="#chitiet" prefHeight="31.0" prefWidth="110.0" text="Chi Tiết" />
+      <Button layoutX="574.0" layoutY="507.0" mnemonicParsing="false" onAction="#lapphieutra" text="Lập Phiếu Trả" />
+   </children>
+</AnchorPane>

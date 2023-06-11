@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="840.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TaoPhieuTraController">
+ <children>
+      <Text layoutX="458.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã độc giả:" />
+      <Text layoutX="467.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày trả:" />
+      <Text layoutX="57.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã phiếu trả:" />
+      <Text layoutX="39.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã phiếu mượn:" />
+      <TextField fx:id="tfMadocgia" layoutX="565.0" layoutY="21.0" prefHeight="31.0" prefWidth="200.0" />
+      <Pane layoutX="565.0" layoutY="201.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaytra" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children></Pane>
+      <Pane layoutX="166.0" layoutY="21.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMaphieutra" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children></Pane>
+      <Button layoutX="759.0" layoutY="307.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="60.0" text="Add" />
+      <TableView fx:id="tableDanhsach" layoutX="54.0" layoutY="261.0" prefHeight="234.0" prefWidth="687.0">
+        <columns>
+            <TableColumn fx:id="colMapm" prefWidth="75.0" text="Mã PM" />
+          <TableColumn fx:id="colMatl" prefWidth="75.0" text="Mã TL" />
+          <TableColumn fx:id="colTentl" prefWidth="168.0" text="Tên TL" />
+            <TableColumn fx:id="colTrangthai" prefWidth="107.0" text="Trạng Thái" />
+            <TableColumn fx:id="colNgaymuon" prefWidth="103.0" text="Ngày Mượn" />
+            <TableColumn fx:id="colHantra" prefWidth="97.0" text="Hạn Trả" />
+            <TableColumn fx:id="colTre" prefWidth="60.0" text="Trễ" />
+        </columns>
+      </TableView>
+      <Button layoutX="366.0" layoutY="513.0" mnemonicParsing="false" onAction="#taophieu" text="Tạo Phiếu" />
+      <Text layoutX="101.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:" />
+      <Text layoutX="463.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:" />
+      <Pane layoutX="166.0" layoutY="91.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfHoten" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children>
+      </Pane>
+      <Pane layoutX="565.0" layoutY="91.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaysinh" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children>
+      </Pane>
+      <Button layoutX="773.0" layoutY="21.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <Text layoutX="41.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tình trạng sách:" />
+      <Button layoutX="758.0" layoutY="371.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+      <Text layoutX="463.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã tài liệu" />
+      <ComboBox fx:id="cbMapm" layoutX="166.0" layoutY="143.0" prefHeight="31.0" prefWidth="200.0" />
+      <ComboBox fx:id="cbMatl" layoutX="565.0" layoutY="143.0" prefHeight="31.0" prefWidth="200.0" />
+      <ComboBox fx:id="cbTinhtrang" layoutX="166.0" layoutY="201.0" prefHeight="31.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

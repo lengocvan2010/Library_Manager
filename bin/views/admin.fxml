@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="900.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminController">
+   <children>
+      <Button layoutY="5.0" mnemonicParsing="false" onAction="#gotoLoaidg" prefHeight="36.0" prefWidth="174.0" styleClass="button1" stylesheets="@../source/Main.css" text="Quản Lý Loại Độc Giả" textFill="#3400b9" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="726.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="174.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoThuthu" prefHeight="36.0" prefWidth="174.0" styleClass="button1" stylesheets="@../source/Main.css" text="Quản Lý Thủ Thư" textFill="#3400b9" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="174.0" AnchorPane.rightAnchor="552.0" AnchorPane.topAnchor="5.0" />
+      <Button layoutX="348.0" layoutY="5.0" mnemonicParsing="false" onAction="#gotoDkthuthu" prefHeight="36.0" prefWidth="174.0" styleClass="button1" stylesheets="@../source/Main.css" text="Đăng Ký Thủ Thư" textFill="#3400b9" AnchorPane.bottomAnchor="659.0" AnchorPane.leftAnchor="348.0" AnchorPane.rightAnchor="378.0" AnchorPane.topAnchor="5.0" />
+      <BorderPane fx:id="borderPane" layoutX="14.0" layoutY="52.0" prefHeight="536.0" prefWidth="874.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+   </children>
+</AnchorPane>

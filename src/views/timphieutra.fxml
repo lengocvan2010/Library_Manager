@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="840.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TimPhieuTraController">
+ <children>
+      <TableView fx:id="tableDanhsach" layoutX="51.0" layoutY="132.0" prefHeight="342.0" prefWidth="739.0">
+        <columns>
+            <TableColumn fx:id="colMaphieutra" prefWidth="114.0" text="Mã Phiếu Trả" />
+            <TableColumn fx:id="colMaphieumuon" prefWidth="125.0" text="Mã Phiếu Mượn" />
+            <TableColumn fx:id="colMadg" minWidth="8.0" prefWidth="94.0" text="Mã ĐG" />
+          <TableColumn fx:id="colMatl" prefWidth="81.0" text="Mã TL" />
+            <TableColumn fx:id="colTentl" prefWidth="211.0" text="Tên TL" />
+            <TableColumn fx:id="colNgaytra" prefWidth="112.0" text="Ngày Trả" />
+        </columns>
+      </TableView>
+      <Label layoutX="152.0" layoutY="55.0" text="Nhập mã độc giả:" />
+      <TextField fx:id="tfMa" layoutX="297.0" layoutY="50.0" />
+      <Button layoutX="523.0" layoutY="50.0" mnemonicParsing="false" onAction="#timkiem" prefHeight="35.0" prefWidth="81.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <Button layoutX="648.0" layoutY="48.0" mnemonicParsing="false" onAction="#lammoi">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+      <Button layoutX="336.0" layoutY="487.0" mnemonicParsing="false" onAction="#chitiet" prefHeight="31.0" prefWidth="110.0" text="Chi Tiết" />
+   </children>
+</AnchorPane>

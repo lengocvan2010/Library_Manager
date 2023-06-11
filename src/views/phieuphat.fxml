@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="558.0" prefWidth="872.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhieuPhatController">
+ <children>
+      <TableView fx:id="tableDanhsach" layoutX="37.0" layoutY="132.0" prefHeight="403.0" prefWidth="798.0">
+        <columns>
+            <TableColumn fx:id="colMaphieuphat" prefWidth="114.0" text="Mã Phiếu Phạt" />
+            <TableColumn fx:id="colMaphieumuon" prefWidth="125.0" text="Mã Phiếu Mượn" />
+            <TableColumn fx:id="colMadg" minWidth="8.0" prefWidth="94.0" text="Mã ĐG" />
+          <TableColumn fx:id="colMatl" prefWidth="81.0" text="Mã TL" />
+            <TableColumn fx:id="colManv" prefWidth="124.0" text="Mã NV Lập" />
+            <TableColumn fx:id="colNgaylap" prefWidth="140.0" text="Ngày Lập" />
+            <TableColumn fx:id="colTienphat" prefWidth="134.0" text="Số Tiền Phạt" />
+        </columns>
+      </TableView>
+      <Label layoutX="152.0" layoutY="55.0" text="Nhập mã độc giả:" />
+      <TextField fx:id="tfMa" layoutX="297.0" layoutY="50.0" />
+      <Button layoutX="523.0" layoutY="50.0" mnemonicParsing="false" onAction="#timkiem" prefHeight="35.0" prefWidth="88.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <Button layoutX="656.0" layoutY="48.0" mnemonicParsing="false" onAction="#lammoi">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+   </children>
+</AnchorPane>

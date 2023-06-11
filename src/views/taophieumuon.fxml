@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="558.0" prefWidth="840.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TaoPhieuMuonController">
+ <children>
+      <Text layoutX="459.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã độc giả:" />
+      <Text layoutX="475.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày trả:" />
+      <Text layoutX="41.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã phiếu mượn:" />
+      <Text layoutX="67.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày mượn:" />
+      <TextField fx:id="tfMadocgia" layoutX="565.0" layoutY="57.0" prefHeight="31.0" prefWidth="200.0" />
+      <Pane layoutX="166.0" layoutY="202.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaymuon" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children></Pane>
+      <Pane layoutX="565.0" layoutY="202.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaytra" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children></Pane>
+      <Pane layoutX="166.0" layoutY="57.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMaphieumuon" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children></Pane>
+      <Text layoutX="565.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã TL" />
+      <Button layoutX="758.0" layoutY="360.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="60.0" text="Add" />
+      <TextField fx:id="tfMatl" layoutX="642.0" layoutY="360.0" prefHeight="31.0" prefWidth="77.0" />
+      <TableView fx:id="tableDanhsach" layoutX="50.0" layoutY="255.0" prefHeight="241.0" prefWidth="470.0">
+        <columns>
+          <TableColumn fx:id="colMatl" prefWidth="75.0" text="Mã TL" />
+          <TableColumn fx:id="colTentl" prefWidth="394.0" text="Tên TL" />
+        </columns>
+      </TableView>
+      <Button layoutX="366.0" layoutY="513.0" mnemonicParsing="false" onAction="#taophieu" text="Tạo Phiếu" />
+      <Text layoutX="101.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:" />
+      <Text layoutX="463.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày sinh:" />
+      <Pane layoutX="166.0" layoutY="135.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfHoten" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children>
+      </Pane>
+      <Pane layoutX="565.0" layoutY="135.0" prefHeight="31.0" prefWidth="200.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaysinh" layoutX="5.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="190.6708984375" />
+         </children>
+      </Pane>
+      <Button layoutX="772.0" layoutY="57.0" mnemonicParsing="false" onAction="#check" text="Check" />
+      <Text layoutX="565.0" layoutY="285.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số ngày tối đa:" />
+      <Pane layoutX="680.0" layoutY="264.0" prefHeight="31.0" prefWidth="50.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSongaytoida" layoutX="11.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="49.99998450279236" />
+         </children></Pane>
+      <Button layoutX="756.0" layoutY="421.0" mnemonicParsing="false" onAction="#delete" text="Delete" />
+   </children>
+</AnchorPane>

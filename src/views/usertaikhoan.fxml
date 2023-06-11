@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="680.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserThongTinTKController">
+   <children>
+      <Label layoutX="48.0" layoutY="86.0" text="Tên đăng nhập" />
+      <Label layoutX="90.0" layoutY="241.0" text="Họ tên" />
+      <Label layoutX="66.0" layoutY="318.0" text="Ngày sinh" />
+      <Label layoutX="63.0" layoutY="155.0" text="Mã độc giả" />
+      <Label layoutX="86.0" layoutY="390.0" text="Địa chỉ" />
+      <Label layoutX="337.0" layoutY="14.0" text="Chi tiết độc giả">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Pane layoutX="170.0" layoutY="79.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfTendangnhap" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Label layoutX="99.0" layoutY="461.0" text="SĐT" />
+      <Label layoutX="490.0" layoutY="461.0" text="Sách quá hạn" />
+      <Label layoutX="464.0" layoutY="390.0" text="Sách đang mượn" />
+      <Label layoutX="494.0" layoutY="318.0" text="Loại độc giả" />
+      <Label layoutX="500.0" layoutY="241.0" text="MSSV/MCB" />
+      <Label layoutX="534.0" layoutY="155.0" text="CMND" />
+      <Label layoutX="538.0" layoutY="86.0" text="Email" />
+      <Pane layoutX="170.0" layoutY="148.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMadocgia" layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.0000129044056" />
+         </children>
+      </Pane>
+      <Pane layoutX="170.0" layoutY="234.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfHoten" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="170.0" layoutY="311.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfNgaysinh" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="170.0" layoutY="383.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfDiachi" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="170.0" layoutY="454.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSdt" layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="454.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSachquahan" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="383.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfSachmuon" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="311.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfLoaidocgia" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="234.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMS" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="148.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfCMND" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00002451241016" />
+         </children>
+      </Pane>
+      <Pane layoutX="615.0" layoutY="79.0" prefHeight="35.0" prefWidth="207.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfEmail" layoutX="8.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="190.00001192092896" />
+         </children>
+      </Pane>
+      <Button layoutX="586.0" layoutY="565.0" mnemonicParsing="false" onAction="#doimatkhau" text="Đổi mật khẩu" />
+      <Button layoutX="193.0" layoutY="565.0" mnemonicParsing="false" onAction="#updatethongtin" text="Chỉnh sửa thông tin" />
+      <Button layoutX="784.0" layoutY="34.0" mnemonicParsing="false" onAction="#lammoi">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="20px" />
+         </graphic>
+      </Button>
+     
+   </children>
+</AnchorPane>

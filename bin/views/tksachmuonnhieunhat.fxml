@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="536.0" prefWidth="874.0" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SachMuonNhieuNhatController">
+   <children>
+      <TableView fx:id="tabletailieu" layoutX="16.0" layoutY="27.0" prefHeight="486.0" prefWidth="854.0" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="27.0">
+        <columns>
+          <TableColumn fx:id="colMaTaiLieu" prefWidth="123.0" text="Mã Tài Liệu" />
+            <TableColumn fx:id="colTenTaiLieu" prefWidth="301.0" text="Tên Tài Liệu" />
+            <TableColumn fx:id="colLoaiTaiLieu" minWidth="4.0" prefWidth="138.0" resizable="false" text="Loại Tài Liệu" />
+            <TableColumn fx:id="colTLDacBiet" prefWidth="79.0" text="Đặc Biệt" />
+            <TableColumn fx:id="colSoLuongCon" prefWidth="111.0" text="Số Lượng" />
+            <TableColumn fx:id="colSoLuongMuon" prefWidth="100.0" text="SL Mượn" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

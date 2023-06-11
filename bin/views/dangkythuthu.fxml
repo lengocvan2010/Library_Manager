@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="536.0" prefWidth="874.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DkthuthuController">
+   <children>
+      <Label layoutX="96.0" layoutY="182.0" text="Tên Đăng Nhập" />
+      <Label layoutX="522.0" layoutY="77.0" text="Họ Tên" />
+      <Label layoutX="514.0" layoutY="182.0" text="Mật Khẩu" />
+      <Label layoutX="121.0" layoutY="73.0" text="Mã Thủ Thư" />
+      <TextField fx:id="tfHoten" layoutX="616.0" layoutY="72.0" prefHeight="31.0" prefWidth="187.0" />
+      <TextField fx:id="tfMatkhau" accessibleRole="PASSWORD_FIELD" layoutX="616.0" layoutY="177.0" />
+      <TextField fx:id="tfTendangnhap" layoutX="212.0" layoutY="177.0" />
+      <Button layoutX="332.0" layoutY="344.0" mnemonicParsing="false" onAction="#dangky" prefHeight="31.0" prefWidth="194.0" text="Đăng Ký" />
+      <Text layoutX="133.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ca Trực" />
+      <ComboBox fx:id="cbCatruc" layoutX="212.0" layoutY="268.0" prefHeight="31.0" prefWidth="105.0" />
+      <Pane layoutX="217.0" layoutY="72.0" prefHeight="31.0" prefWidth="187.0" style="-fx-border-color: #808080;">
+         <children>
+            <Text fx:id="tfMathuthu" layoutX="6.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="160.6708984375" />
+         </children></Pane>
+      <Text layoutX="448.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập Lại Mật Khẩu" wrappingWidth="132.9999970793724" />
+      <TextField fx:id="tfMatkhau1" accessibleRole="PASSWORD_FIELD" layoutX="616.0" layoutY="268.0" />
+   </children>
+</AnchorPane>

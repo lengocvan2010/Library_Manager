@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="635.0" prefWidth="872.0" style="-fx-border-color: #808080;" styleClass="pane" stylesheets="@../source/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserPhieuNhacNhoController">
+ <children>
+      <TableView fx:id="tableDanhsach" layoutX="37.0" layoutY="102.0" prefHeight="504.0" prefWidth="798.0">
+        <columns>
+            <TableColumn fx:id="colMaphieunhacnho" prefWidth="108.0" text="Mã Phiếu NN" />
+            <TableColumn fx:id="colMaphieumuon" prefWidth="70.0" text="Mã PM" />
+          <TableColumn fx:id="colMatl" prefWidth="100.0" text="Mã Tài Liệu" />
+            <TableColumn fx:id="colTentl" prefWidth="262.0" text="Tên Tài Liệu" />
+            <TableColumn fx:id="colThoigiancon" prefWidth="123.0" text="Thời Gian Còn" />
+            <TableColumn fx:id="colNgaytao" prefWidth="133.0" text="Ngày Tạo" />
+        </columns>
+      </TableView>
+      <Label layoutX="152.0" layoutY="50.0" text="Đến" />
+      <Button layoutX="565.0" layoutY="50.0" mnemonicParsing="false" onAction="#timkiem" prefHeight="35.0" prefWidth="98.0">
+         <graphic>
+            <FontAwesomeIcon glyphName="SEARCH" size="25px" />
+         </graphic></Button>
+      <Button layoutX="684.0" layoutY="50.0" mnemonicParsing="false" onAction="#lammoi">
+         <graphic>
+            <FontAwesomeIcon glyphName="ROTATE_RIGHT" size="25px" />
+         </graphic></Button>
+      <Text layoutX="186.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
+      <Text layoutX="305.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tháng" />
+      <Text layoutX="420.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Năm" />
+      <Text layoutX="186.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày" />
+      <Text layoutX="305.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tháng" />
+      <Text layoutX="420.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Năm" />
+      <TextField fx:id="tfToNgay" layoutX="238.0" layoutY="67.0" prefHeight="31.0" prefWidth="49.0" />
+      <TextField fx:id="tfFromNgay" layoutX="238.0" layoutY="10.0" prefHeight="31.0" prefWidth="49.0" />
+      <TextField fx:id="tfToThang" layoutX="353.0" layoutY="67.0" prefHeight="31.0" prefWidth="49.0" />
+      <TextField fx:id="tfFromThang" layoutX="353.0" layoutY="10.0" prefHeight="31.0" prefWidth="49.0" />
+      <TextField fx:id="tfToNam" layoutX="468.0" layoutY="67.0" prefHeight="31.0" prefWidth="49.0" />
+      <TextField fx:id="tfFromNam" layoutX="468.0" layoutY="10.0" prefHeight="31.0" prefWidth="49.0" />
+   </children>
+</AnchorPane>
